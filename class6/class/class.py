@@ -22,3 +22,6 @@ for i in range(0, 100, 2):
     t.stamp()
 
 t.done()
+# git add .
+# git commit -m "cless6"
+# git push
