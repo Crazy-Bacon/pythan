@@ -10,18 +10,18 @@
 # turtle.shape('turtle')
 # turtle.stamp()
 # turtle.penup()
-import turtle as t
+# import turtle as t
 
-t.shape("turtle")
-t.color('yellow')
-t.penup()
+# t.shape("turtle")
+# t.color('yellow')
+# t.penup()
 
-for i in range(0, 100, 2):
-    t.forward(i)
-    t.right(25)
-    t.stamp()
+# for i in range(0, 100, 2):
+#     t.forward(i)
+#     t.right(25)
+#     t.stamp()
 
-t.done()
+# t.done()
 # git add .
-# git commit -m "cless6"
+# git commit -m "hw6"
 # git push
