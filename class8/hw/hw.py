@@ -25,3 +25,6 @@ for x in range(a, b):
 
     if i == x:
         print(x)
+#git add .
+# git commit -m "class8"
+# git push
