@@ -85,3 +85,6 @@ while True:
     #         break
     #     else:
     #         print("輸入錯誤查無此果汁，請重新輸入編號")
+    # git add .
+# git commit -m "class9"
+# git push

@@ -56,15 +56,18 @@
 
 # print(random.randint(1, 3))
 # print(random.randint(1, 10))
-import random
+# import random
 
-ans = random.randint(1, 100)
-while True:
-    x = int(input("請輸入1~100的整數:"))
-    if x == ans:
-        print("恭喜猜中!")
-        break
-    elif x > ans:
-        print("再小一點")
-    elif x < ans:
-        print("再大一點")
+# ans = random.randint(1, 100)
+# while True:
+#     x = int(input("請輸入1~100的整數:"))
+#     if x == ans:
+#         print("恭喜猜中!")
+#         break
+#     elif x > ans:
+#         print("再小一點")
+#     elif x < ans:
+#         print("再大一點")
+# git add .
+# git commit -m "class9"
+# git push
