@@ -13,7 +13,7 @@ for i in bag:
 
 # r = input("請輸入想那的東西")
 # while r in bag:
-#     bag.remove(r)
+#      bag.remove(r)
 
 # print(bag)
 
