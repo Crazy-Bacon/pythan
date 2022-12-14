@@ -55,3 +55,6 @@ while True:
 #         else:
 #             print(f"您點的商品是{juices[ans-1]}")
 #             bag.append(juices[ans - 1])
+#git add .
+# git commit -m "class9"
+# git push
