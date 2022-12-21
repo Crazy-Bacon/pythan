@@ -12,3 +12,6 @@ print(b)
 
 for key, value in b.items():
     print(key + ":" + value)
+#git add .
+# git commit -m "class9"
+# git push
