@@ -6,8 +6,18 @@ import requests
 os.chdir(sys.path[0])
 
 
+def jj():
+    global t
+    if c.get() == True:
+        t = (t - 32) * 5 / 9
+        f_label.config(text=f"溫度:{t}°C")
+    else:
+        t = t * (9 / 5) + 32
+        f_label.config(text=f"溫度:{t}°F")
+
+
 def hi():
-    global info
+    global t
     api_Key = "892da2f13edf3c7f382637760e72d224"
     base_url = "https://api.openweathermap.org/data/2.5/weather?"
     city_name = entry.get()
@@ -34,6 +44,7 @@ def hi():
 
         f_label.config(text=f'溫度:{info["main"]["temp"]}°C')
         i_label.config(text=f'描述:{info["weather"][0]["description"]}')
+        t = info["main"]["temp"]
         image = Image.open(f"{icon_code}.png")
         tk_imagr = ImageTk.PhotoImage(image)
         d_label.config(image=tk_imagr)
@@ -79,7 +90,7 @@ g = Checkbutton(a,
                 variable=c,
                 onvalue=True,
                 offvalue=False,
-                command=on_switch_change,
+                command=jj,
                 style='my.TCheckbutton')
 g.grid(row=2, column=1)
 
