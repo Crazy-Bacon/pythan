@@ -12,6 +12,8 @@ os.chdir(sys.path[0])  # 設定工作目錄
 
 def call_weather_api(lon: str = "121.5319", lat: str = "25.0478") -> dict:
     """ 使用OpenWeatherMap API獲取天氣資訊 """
+    api_key = "892da2f13edf3c7f382637760e72d224"
+    base_url = "https://api.openweathermap.org/data/2.5/onecall?"
     send_url = base_url
     send_url += "lat=" + lat
     send_url += "&lon=" + lon
@@ -119,8 +121,6 @@ def on_closing():
     plt.close('all')
 
 
-api_key = "892da2f13edf3c7f382637760e72d224"
-base_url = "https://api.openweathermap.org/data/2.5/onecall?"
 lon = "121.5319"  # Taipei  的經度
 lat = "25.0478"  # Taipei  的緯度
 exclude = "minutely,hourly"  # 不要分鐘級和小時級的資料
